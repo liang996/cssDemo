@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <style>
     body {
@@ -13,10 +13,13 @@
     }
 
 
+    .head {
+      box-shadow: 2px 2px 5px #999;
+    }
+
     .box1 {
       height: 601px;
       padding-bottom: 39px;
-
     }
 
     .layer1 {
@@ -27,26 +30,25 @@
 
     .mod1 {
       position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
+      left: 5;
+      right: 5;
+      top: 5;
+      width: 98.4%;
       background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6a75afc2d4b74096b41977a88acf8938473804a7436e98e3e2e9509f3de485a9) no-repeat center center;
       background-size: cover;
       height: 70px;
-
     }
 
     .group1 {
-      z-index: 34;
       width: 104px;
       height: 28px;
+      margin: 18px 0px 28px 38px;
       background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng3bacd41ecda895f05d2cedc05923169ab58159e7f43fb0d361850b9ccf3b74ff) 100% no-repeat;
     }
 
+
     .info1 {
-      z-index: 79;
       width: 180px;
-      height: 28px;
       display: block;
       overflow-wrap: break-word;
       color: rgba(34, 34, 34, 1);
@@ -56,8 +58,10 @@
       line-height: 28px;
       text-align: left;
       align-self: flex-start;
-      margin: 40px 0 0 50px;
+      margin: 80px 0 0 50px;
+
     }
+
 
     .word1 {
       z-index: 74;
@@ -146,30 +150,37 @@
       margin: 9px 0 0 50px;
     }
   </style>
-  </style>
 </head>
 
 <body>
-  <div class="box1">
+  <div class="head">
+    <div class="box1">
 
-    <div class="layer1">
-      <div class="mod1 ">
-        <div class="group1 "></div>
+      <div class="layer1">
+        <div class="mod1 ">
+          <div class="group1 "></div>
+          <p class="info1">尊敬的 <span th:text="${name}">111</span>
+            ，你好！
+          </p>
+          <span class="word1">
+            XXXXXXXX公司，于XXXX年XX月XX日发起一笔提现申请，请及时查阅。
+          </span>
+          <div class="mod2">
+            <span class="info2">点击前往</span>
+            <span class="txt1">
+              <a href="https://account.xstarlife.com/">https://account.xstarlife.com/</a>
+            </span>
+          </div>
+          <span class="txt2">祝你工作顺利，身体健康！</span>
+          <div class="mod3 flex-col"></div>
+          <span class="word2">此邮件为系统邮件，无需回复</span>
+        </div>
+
+
       </div>
-
-      <span class="info1">尊敬的用户，你好！</span>
-      <span class="word1">
-        XXXXXXXX公司，于XXXX年XX月XX日发起一笔提现申请，请及时查阅。
-      </span>
-      <div class="mod2">
-        <span class="info2">点击前往</span>
-        <span class="txt1">https://account.xstarlife.com/</span>
-      </div>
-      <span class="txt2">祝你工作顺利，身体健康！</span>
-      <div class="mod3 flex-col"></div>
-      <span class="word2">此邮件为系统邮件，无需回复</span>
-
     </div>
+  </div>
+
 </body>
 
 </html>

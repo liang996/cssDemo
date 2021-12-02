@@ -7,6 +7,41 @@
   <title>Document</title>
 
   <style>
+    body * {
+      box-sizing: border-box;
+      flex-shrink: 0;
+    }
+
+    body {
+      font-family: PingFangSC-Regular, Roboto, Helvetica Neue, Helvetica, Tahoma,
+        Arial, PingFang SC-Light, Microsoft YaHei;
+    }
+
+    button {
+      margin: 0;
+      padding: 0;
+      border: 1px solid transparent;
+      outline: none;
+      background-color: transparent;
+    }
+
+    button:active {
+      opacity: 0.6;
+    }
+
+    .flex-col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+
+
+
     .page {
       z-index: 1;
       position: relative;
@@ -49,7 +84,7 @@
     .mod1 {
       z-index: 5;
       height: 70px;
-      background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6a75afc2d4b74096b41977a88acf8938473804a7436e98e3e2e9509f3de485a9) 100%;
+      background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6a75afc2d4b74096b41977a88acf8938473804a7436e98e3e2e9509f3de485a9) 100% no-repeat;
       width: 720px;
       justify-content: center;
       align-items: flex-start;
