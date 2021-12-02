@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 10px auto;
+      padding: 0;
+
+    }
+
+    .box {
+      /**
+      清除浮动第二种方法：设置属性overflow: auto*/
+      overflow: hidden;
+      width: 600px;
+      border: 1px solid pink
+    }
+
+    .left {
+      float: left;
+
+      height: 100px;
+      width: 280px;
+      background-color: rgb(228, 103, 20);
+
+    }
+
+    .right {
+      float: left;
+
+      height: 100px;
+      width: 280px;
+      margin-left: 20px;
+
+      background-color: rgb(228, 103, 20);
+
+    }
+
+    .clear {
+      /**
+      清除浮动第一种方法：在浮动的最后一个盒子后面加上一个空盒子(必须块及元素)，然后设置属性clear:both*/
+      clear: both;
+
+    }
+
+    .footer {
+      height: 200px;
+      background-color: rgb(245, 60, 75);
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <!-- 清除浮动第二种方法在父盒子添加属性:      overflow: auto;或      overflow: hidden;
+
+ -->
+    <div class="left">1</div>
+    <div class="right">2</div>
+
+    <!-- <div class="clear"></div>清除浮动第一种方法 -->
+
+  </div>
+  <div class="footer">222</div>
+
+</body>
+
+</html>

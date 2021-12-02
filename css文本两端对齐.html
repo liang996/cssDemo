@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>justify的使用案例(文字两端对齐)</title>
+<link rel="stylesheet" type="text/css" href="css/justify.css" />
+<style>
+  span {
+    text-align: justify;
+    float: left;
+    width: 80px;
+  }
+
+  span:after {
+    content: '.....';
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    height: 0;
+  }
+
+  input {
+    width: 80px;
+
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="box">
+    <span>用户名:</span>
+    <input type="text" name='username' />
+    <br><br>
+    <span>密码:</span>
+    <input type="password" />
+  </div>
+
+</body>
+
+</html>

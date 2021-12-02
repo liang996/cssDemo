@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>复合选择器</title>
+  <style>
+    a {
+      text-decoration: none;
+    }
+
+    /**初始化经过 a:link*/
+    #aid:link {
+      color: rgb(24, 226, 226);
+    }
+
+    /**经过 a:visited*/
+
+    #aid:visited {
+      color: rgb(235, 22, 22)
+    }
+
+    /**悬浮过 a:hover*/
+
+    #aid:hover {
+      color: rgb(75, 21, 175)
+    }
+
+    /**鼠标安心悬浮过 a：active*/
+    #aid:active {
+      color: rgb(211, 169, 33)
+    }
+
+    /**把获得input光标的元素选取出来*/
+
+    input:focus {
+      background-color: rgb(177, 18, 79);
+    }
+
+    /**后代选择器(空格)*/
+    ol li a {
+      color: rgb(12, 235, 160);
+    }
+
+
+    /**子类选择器>*/
+    div>a {
+      color: rgba(233, 212, 24, 0.473);
+    }
+
+    /**联合选择器,*/
+    div,
+    h3,
+    #ola li {
+      color: rgb(129, 20, 218)
+    }
+  </style>
+</head>
+
+<body>
+  <!--a伪类选择器使用-->
+
+  <a id="aid" href="#">hhhhhhh</a><br />
+
+  <!--focus表单输入伪类选择器使用-->
+
+  <input type="text">
+
+
+  <!--后代选择器使用-->
+  <div>
+    <ol>
+      <li>后代选择器使用1</li>
+      <li><a href="#">后代选择器使用2</a></li>
+    </ol>
+    <ui>
+      <li>后代选择器使用1</li>
+      <li><a href="#">后代选择器使用2</a></li>
+
+    </ui>
+  </div>
+  <!--子类选择器使用-->
+  <div>
+    <a href="#">子类选择器使用</a>
+    <p>
+      <a href="#">子类选择器使用</a>
+
+    </p>
+  </div>
+
+  <!--联合选择器使用-->
+  <div>
+    <h3>联合选择器使用</h3>
+    <p>联合选择器使用</p>
+    <ol id="ola">
+      <li>联合选择器使用</li>
+    </ol>
+  </div>
+
+
+  <div>11</div>
+  <div>11</div>
+
+  <div>11</div>
+  <div>11</div>
+  <div>11</div>
+  <span>12</span>
+  <span>12</span>
+  <span>12</span>
+  <span>12</span>
+  <span>12</span>
+
+</body>
+
+</html>

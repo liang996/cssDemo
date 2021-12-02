@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <style>
+    .page {
+      z-index: 1;
+      position: relative;
+      width: 825px;
+      height: 690px;
+      background-color: rgba(245, 246, 247, 1);
+      overflow: hidden;
+      justify-content: flex-end;
+      padding-bottom: 19px;
+      align-items: center;
+    }
+
+    .box1 {
+      z-index: 2;
+      height: 601px;
+      border-radius: 4px;
+      border: 1px solid rgba(230, 231, 232, 1);
+      background-color: rgba(255, 255, 255, 1);
+      width: 795px;
+      justify-content: flex-end;
+      padding-bottom: 39px;
+      align-items: center;
+    }
+
+    .main1 {
+      z-index: 4;
+      height: 455px;
+      background-color: rgba(255, 255, 255, 1);
+      box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+      width: 720px;
+      justify-content: flex-start;
+    }
+
+    .layer1 {
+      z-index: auto;
+      width: 720px;
+      height: 355px;
+    }
+
+    .mod1 {
+      z-index: 5;
+      height: 70px;
+      background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng6a75afc2d4b74096b41977a88acf8938473804a7436e98e3e2e9509f3de485a9) 100%;
+      width: 720px;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 50px;
+    }
+
+    .group1 {
+      z-index: 34;
+      width: 104px;
+      height: 28px;
+      background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng3bacd41ecda895f05d2cedc05923169ab58159e7f43fb0d361850b9ccf3b74ff) 100% no-repeat;
+    }
+
+    .info1 {
+      z-index: 79;
+      width: 180px;
+      height: 28px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(34, 34, 34, 1);
+      font-size: 20px;
+      font-family: PingFangSC-Medium;
+      white-space: nowrap;
+      line-height: 28px;
+      text-align: left;
+      align-self: flex-start;
+      margin: 40px 0 0 50px;
+    }
+
+    .word1 {
+      z-index: 74;
+      width: 451px;
+      height: 20px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(34, 34, 34, 1);
+      font-size: 14px;
+      font-family: PingFangSC-Regular;
+      white-space: nowrap;
+      line-height: 20px;
+      text-align: left;
+      align-self: flex-start;
+      margin: 30px 0 0 50px;
+    }
+
+    .mod2 {
+      z-index: 75;
+      width: 263px;
+      height: 20px;
+      overflow-wrap: break-word;
+      text-align: left;
+      white-space: nowrap;
+      align-self: flex-start;
+      font-size: 0;
+      margin: 20px 0 0 50px;
+    }
+
+    .info2 {
+      font-size: 14px;
+      font-family: PingFangSC-Regular;
+      color: rgba(34, 34, 34, 1);
+      line-height: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .txt1 {
+      font-size: 14px;
+      font-family: PingFangSC-Regular;
+      color: rgba(0, 122, 255, 1);
+      line-height: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .txt2 {
+      z-index: 76;
+      width: 168px;
+      height: 20px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(34, 34, 34, 1);
+      font-size: 14px;
+      font-family: PingFangSC-Regular;
+      white-space: nowrap;
+      line-height: 20px;
+      text-align: left;
+      align-self: flex-start;
+      margin: 65px 0 0 50px;
+    }
+
+    .mod3 {
+      z-index: 78;
+      width: 620px;
+      height: 1px;
+      background: url(https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPng5baeebe24e115958610a4f49519cd1ee1cc0a9d6c1f1e981f9612dc3a1a1b578) -1px 0px no-repeat;
+      align-self: center;
+      margin-top: 15px;
+    }
+
+    .word2 {
+      z-index: 77;
+      width: 156px;
+      height: 17px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(153, 153, 153, 1);
+      font-size: 12px;
+      font-family: PingFangSC-Regular;
+      white-space: nowrap;
+      line-height: 17px;
+      text-align: left;
+      align-self: flex-start;
+      margin: 9px 0 0 50px;
+    }
+
+    .img1 {
+      z-index: 3;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 825px;
+      height: 136px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page flex-col">
+    <div class="box1 flex-col">
+      <div class="main1 flex-col">
+        <div class="layer1 flex-col">
+          <div class="mod1 flex-col">
+            <div class="group1 flex-col"></div>
+          </div>
+          <span class="info1">尊敬的用户，你好！</span>
+          <span class="word1">
+            XXXXXXXX公司，于XXXX年XX月XX日发起一笔提现申请，请及时查阅。
+          </span>
+          <div class="mod2">
+            <span class="info2">点击前往</span>
+            <span class="txt1">https://account.xstarlife.com/</span>
+          </div>
+          <span class="txt2">祝你工作顺利，身体健康！</span>
+          <div class="mod3 flex-col"></div>
+          <span class="word2">此邮件为系统邮件，无需回复</span>
+        </div>
+      </div>
+    </div>
+    <img class="img1" referrerpolicy="no-referrer"
+      src="https://lanhu.oss-cn-beijing.aliyuncs.com/SketchPngd858f07c49a9be0df7b7b4f91bef7a93796b56fcb76f4e31b867897ec0672fb8" />
+  </div>
+</body>
+
+</html>

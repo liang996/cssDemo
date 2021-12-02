@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>绝对定位</title>
+  <style>
+    .container {
+      height: 200px;
+      position: relative;
+      border: 3px solid green;
+
+    }
+
+    .containerLeft {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      /*第一个-50%是定义盒子向左的距离,第二个-50%是定义盒子向上的距离,*/
+
+      border: 2px solid rgb(0, 44, 139);
+      width: 200px;
+      height: 100px;
+    }
+
+    span {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin: 0px;
+      transform: translate(-50%, -50%);
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="containerLeft">
+      <span>1</span>
+    </div>
+  </div>
+
+</body>
+
+</html>

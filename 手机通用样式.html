@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title></title>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body,
+    html {
+      width: 100%;
+      height: 100%;
+    }
+
+    header {
+      width: 100%;
+      height: 44px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .title {
+      width: 100%;
+      text-align: center;
+      line-height: 44px;
+      background-color: #aaa;
+    }
+
+    section {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 44px;
+      bottom: 49px;
+      background-color: yellowgreen;
+      overflow: auto;
+    }
+
+    .banner {
+      height: 200px;
+      background-color: red;
+    }
+
+    .top {
+      height: 350px;
+      background-color: green;
+    }
+
+    .goodslists {
+      height: 250px;
+      background-color: blue;
+    }
+
+    footer {
+      width: 100%;
+      height: 49px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      list-style: none;
+      display: flex;
+      background-color: #aaa;
+    }
+
+    footer .tab {
+      flex: 1;
+      text-align: center;
+      line-height: 49px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--头部-->
+  <header>
+    <!--标题-->
+    <div class="title">首页</div>
+  </header>
+
+  <!--文本主体-->
+  <section>
+    <div class="banner">
+      广告
+    </div>
+    <div class="top">
+      热销榜单
+    </div>
+    <div class="goodslists">
+      推荐商品
+    </div>
+  </section>
+  <!--尾部-->
+  <footer>
+    <li class="tab">首页</li>
+    <li class="tab">发现</li>
+    <li class="tab">动态</li>
+    <li class="tab">设置</li>
+  </footer>
+</body>
+
+</html>

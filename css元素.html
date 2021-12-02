@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css元素转化</title>
+  <style>
+    /** display: block可以将行内元素转为块级元素，这样就可以设置宽高了*/
+    a {
+      display: block;
+      background-color: rgb(255, 145, 0);
+      height: 40px;
+    }
+
+    /**  display: inline;可以块级元素转为行内元素，这样就可以使其独占一行了*/
+
+    div {
+      display: inline;
+      background-color: rgb(255, 145, 0);
+      height: 40px;
+    }
+
+    /**  display: inline;可以块级元素转为行内元素，这样就可以使其独占一行了*/
+
+    span {
+      display: inline-block;
+      background-color: rgb(255, 145, 0);
+      height: 40px;
+      width: 220px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="#">a为行内元素，我要转为块级元素</a>
+  <a href="#">a为行内元素，我要转为块级元素</a><br />
+
+
+  <div>
+    div为块级元素，我要转为行内元素
+  </div>
+  <div>
+    div为块级元素，我要转为行内元素
+  </div><br /><br />
+
+
+  <span>span为行内元素，我要转为行内块级元素</span>
+  <span>span为行内元素，我要转为行内块级元素</span>
+
+</body>
+
+</html>
