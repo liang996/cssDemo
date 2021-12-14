@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 10px auto;
+      padding: 0;
+
+    }
+
+    .clearfix::after {
+      content: "";
+      display: block;
+
+      height: 0;
+      clear: both;
+      visibility: hidden;
+
+    }
+
+    .clearfix {
+      /* IE6,7的专有 */
+      *zoom: 1
+    }
+
+
+    .box {
+
+      width: 600px;
+      border: 1px solid pink
+    }
+
+    .left {
+      float: left;
+
+      height: 100px;
+      width: 280px;
+      background-color: rgb(228, 103, 20);
+
+    }
+
+    .right {
+      float: left;
+
+      height: 100px;
+      width: 280px;
+      margin-left: 20px;
+
+      background-color: rgb(228, 103, 20);
+
+    }
+
+    .footer {
+      height: 200px;
+      background-color: rgb(245, 60, 75);
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box clearfix">
+
+    <div class="left">1</div>
+    <div class="right">2</div>
+
+
+  </div>
+  <div class="footer">222</div>
+
+</body>
+
+</html>

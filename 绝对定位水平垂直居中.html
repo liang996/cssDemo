@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>绝对定位水平垂直居中</title>
+  <style>
+    .box {
+      /**
+      绝对定位水平垂直居中
+      实现步骤：
+      1.父盒子宽度一半（50%）
+      2.margin负值往左走盒子宽度一半
+      3.top: 50%;父盒子高度一半（50%）
+     3. margin-top负值上走盒子高度一半
+
+      */
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -100px;
+      margin-top: -100px;
+
+      width: 200px;
+      height: 200px;
+      background-color: tomato;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+
+</body>
+
+</html>

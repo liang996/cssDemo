@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /** z-index数字越大，越优先展示*/
+    .box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+
+    }
+
+    .st1 {
+      z-index: 2;
+      background-color: springgreen;
+    }
+
+    .st2 {
+      z-index: 5;
+
+      background-color: rgb(60, 16, 223);
+    }
+
+    .st3 {
+      z-index: 0;
+
+      background-color: rgb(219, 21, 160);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box st1"></div>
+  <div class="box st2"></div>
+
+  <div class="box st3"></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>固定定位实现津贴盒子方法</title>
+  <style>
+    .fix {
+      position: fixed;
+      /**固定定位实现津贴盒子方法,1.距浏览器宽度50%，2.距要贴盒子外间距宽度一半*/
+      left: 50%;
+      margin-left: 400px;
+      margin-top: 500px;
+
+      height: 90px;
+      width: 75px;
+      background-color: springgreen;
+    }
+
+    .box {
+      height: 1000px;
+      width: 800px;
+      margin: 0 auto;
+      background-color: rgb(255, 0, 76);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fix"></div>
+  <div class="box"></div>
+
+</body>
+
+</html>

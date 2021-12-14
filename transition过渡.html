@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 300px;
+      height: 200px;
+      background-color: rgb(209, 16, 199);
+      /* transition:给谁加过渡效果  花费时间   运动曲线   多久开始执行 */
+      transition: width 1s ease 1s;
+    }
+
+    .box:hover {
+      width: 400px;
+
+    }
+
+    .box1 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 200px;
+      background-color: rgb(209, 16, 199);
+      /* transition:给谁加过渡效果  花费时间   运动曲线   多久开始执行 */
+      /* 多个属性连续写，加逗号 */
+      transition: width 1s ease 1s, height 1s ease 1s;
+    }
+
+    .box1:hover {
+      width: 400px;
+      height: 300px;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box"></div>
+
+  <div class="box1"></div>
+
+</body>
+
+</html>
