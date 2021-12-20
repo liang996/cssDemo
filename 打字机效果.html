@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes identifier {
+      0% {
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+      }
+
+      70% {
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+      }
+    }
+
+    .top {
+      position: relative;
+      height: 200px;
+      width: 200px;
+      margin: 100px auto;
+      /* border: 1px solid springgreen; */
+    }
+
+    .top .box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      transform: translate(-50%, -50%);
+
+      background-color: tomato;
+      border-radius: 50%;
+    }
+
+    .top div[class^="dox"] {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 8px;
+      height: 8px;
+      box-shadow: 0 0 12px tomato;
+      border-radius: 50%;
+      animation: identifier 1.3s linear infinite
+    }
+
+    .top div.dox2 {
+      animation-delay: .5s;
+    }
+
+    .top div.dox3 {
+      animation-delay: .8s;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top">
+    <div class="box"></div>
+    <div class="dox1"></div>
+    <div class="dox2"></div>
+    <div class="dox3"></div>
+  </div>
+
+
+</body>
+
+</html>

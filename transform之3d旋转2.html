@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0px;
+      box-sizing: border-box;
+
+    }
+
+
+    body {
+      perspective: 500px;
+    }
+
+    .box {
+      position: relative;
+      height: 250px;
+      width: 200px;
+      margin: 50px auto;
+      transition: all 2s;
+      transform-style: preserve-3d;
+
+    }
+
+    .pub {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+
+    }
+
+    .box .chid1 {
+      background-color: lightgreen;
+    }
+
+    .box .chid2 {
+      background-color: rgb(197, 28, 155);
+    }
+
+
+    .box:hover {
+
+      transform: rotateY(90deg);
+    }
+
+    .box .chid2:hover {
+
+      transform: rotateX(80deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="chid1 pub"></div>
+    <div class="chid2 pub"></div>
+
+  </div>
+
+
+
+</body>
+
+</html>
