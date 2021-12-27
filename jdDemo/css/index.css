@@ -1,0 +1,150 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  background: #e0e0e0;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: -apple-system, Helvetica, sans-serif;
+  color: #666;
+  box-sizing: border-box;
+}
+
+/* 头部 */
+.app {
+  height: 45px;
+}
+
+.app ul li {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background-color: #333333;
+}
+
+.app ul li:nth-child(1) {
+  width: 8%;
+  padding: 10px;
+  padding-top: 15px;
+}
+.app ul li:nth-child(1) img {
+  width: 10px;
+}
+.app ul li:nth-child(2) {
+  width: 10%;
+  padding-top: 8px;
+}
+
+.app ul li:nth-child(2) img {
+  width: 30px;
+  vertical-align: middle;
+}
+.app ul li:nth-child(3) {
+  width: 57%;
+  /* nowrap	文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。 */
+  white-space: nowrap;
+  color: #fff;
+
+  /* overflow:hidden  溢出隐藏 */
+  overflow: hidden;
+  /*  text-overflow: ellipsis; 	显示省略符号来代表被修剪的文本。 */
+  text-overflow: ellipsis;
+}
+.app ul li:nth-child(4) {
+  width: 25%;
+  background-color: #f63515;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+/* 搜索 */
+.seach {
+  position: fixed;
+  height: 44px;
+  line-height: 44px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  min-width: 320px;
+  max-width: 640px;
+}
+
+.seach .left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 44px;
+  color: #fff;
+}
+
+.seach .mid {
+  height: 34px;
+  border-radius: 15px;
+  margin: 7px 50px 0 50px;
+  background-color: #fff;
+}
+.seach .mid .leftBox {
+  width: 30px;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  top: 15px;
+  left: 60px;
+  border: 1px solid transparent;
+  border-right-color: #ccc;
+}
+.leftBox .jd_icon {
+  width: 20px;
+  height: 15px;
+}
+
+.seach .right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 44px;
+  color: #fff;
+}
+
+.seach .mid .rightBox {
+  position: absolute;
+  top: 18px;
+  left: 100px;
+  width: 18px;
+  height: 15px;
+  background-color: violet;
+  background: url(https://st.360buyimg.com/so/images/search/jd-sprites.png?__inline=)
+    no-repeat -81px 0;
+  background-size: 200px auto;
+}
+
+.topBoy img {
+  width: 100%;
+}
+
+.middleBoy img {
+  width: 100%;
+}
+
+nav a {
+  float: left;
+  width: 20%;
+  text-decoration: none;
+  text-align: center;
+  padding: 0 20px 0 20px;
+}
+nav a img {
+  width: 100%;
+}
+nav a span {
+  width: 100%;
+  margin-top: 0.3rem;
+  font-size: 0.6rem;
+  color: #666;
+  white-space: nowrap;
+}

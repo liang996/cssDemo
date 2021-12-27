@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <style>
+    .flex-col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .page {
+      z-index: 1;
+      position: relative;
+      width: 375px;
+      height: auto;
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    .layer1 {
+      z-index: auto;
+      width: 375px;
+      height: 898px;
+    }
+
+    .outer4 {
+      z-index: auto;
+      width: 311px;
+      height: 289px;
+    }
+
+    .box1 {
+      z-index: auto;
+      width: 50%;
+      height: 22px;
+      margin-left: 30%;
+      justify-content: space-between;
+    }
+
+    .icon2 {
+      z-index: 127;
+      width: 34px;
+      height: 10px;
+      margin-top: 6px;
+    }
+
+    .txt2 {
+      z-index: 126;
+      height: 22px;
+      width: 375px;
+      margin-left: 10px;
+      display: block;
+      overflow-wrap: break-word;
+      color: rgba(34, 34, 34, 1);
+      font-size: 16px;
+      font-family: PingFangSC-Medium;
+      white-space: nowrap;
+      line-height: 22px;
+      text-align: justify;
+      text-justify: inter-ideograph;
+    }
+
+    .icon3 {
+      z-index: 152;
+      width: 34px;
+      height: 10px;
+      margin-top: 6px;
+    }
+
+
+    .word4 {
+      text-align: justify;
+      width: 375px;
+      font-size: 15px;
+      color: rgba(71, 71, 76, 1);
+      height: 66px;
+      letter-spacing: 1.0714285373687744px;
+      font-family: PingFangSC-Regular;
+      line-height: 22px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 15px;
+
+
+    }
+
+    .box2 {
+      z-index: 178;
+      position: relative;
+      width: 311px;
+      height: 171px;
+      overflow: hidden;
+      margin-top: 15px;
+    }
+
+    .pic2 {
+      z-index: 179;
+      position: absolute;
+      left: 80px;
+      top: 0;
+      width: 311px;
+      height: 171px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <div class="outer4 flex-col">
+      <div class="box1 flex-row">
+        <img class="icon2" referrerpolicy="no-referrer" src="https://s3.bmp.ovh/imgs/2021/12/650414aea6a04f07.png" />
+        <span class="txt2">活动内容</span>
+        <img class="icon3" referrerpolicy="no-referrer" src="https://s3.bmp.ovh/imgs/2021/12/4d62c735dbd69a14.png" />
+      </div>
+      <span class="word4">
+        本次艺术共融活动有油画创作、杯垫制作、衍纸制作、环保袋涂鸦等艺术形式，对于很多参与者来说是第一次接触。
+      </span>
+      <div class="box2 flex-col">
+        <img class="pic2" referrerpolicy="no-referrer" src="https://s3.bmp.ovh/imgs/2021/12/be745c55856e80dc.png" />
+      </div>
+
+    </div>
+    <div class="outer4 flex-col">
+
+      <span class="word4">
+        本次艺术共融活动有油画创作、杯垫制作、衍纸制作、环保袋涂鸦等艺术形式，对于很多参与者来说是第一次接触。
+      </span>
+      <div class="box2 flex-col">
+        <img class="pic2" referrerpolicy="no-referrer" src="https://s3.bmp.ovh/imgs/2021/12/be745c55856e80dc.png" />
+      </div>
+
+    </div>
+
+
+  </div>
+</body>
+
+</html>
