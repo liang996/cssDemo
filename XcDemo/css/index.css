@@ -10,14 +10,18 @@ body {
   margin: 0 auto;
   background: #f4f4f4;
 }
-
+a {
+  text-decoration: none;
+  color: #333;
+}
 .seach {
   position: fixed;
   top: 0;
   left: 50%;
   box-sizing: border-box;
-  transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
+
+  transform: translateX(-50%);
   background: #fff;
   width: 100%;
   height: 50px;
@@ -25,9 +29,10 @@ body {
   min-width: 320px;
 }
 
-.seach .sec {
+.sec {
   display: flex;
   justify-content: center;
+
   align-items: center;
   background: #fff;
   width: 93%;
@@ -37,7 +42,7 @@ body {
   border: 1.8px solid #0086f6;
 }
 
-.seach .sec .xiec_icon {
+.xiec_icon {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -48,7 +53,7 @@ body {
     no-repeat -81px 0;
   background-size: 200px auto;
 }
-.seach .sec span {
+.sec span {
   position: absolute;
   top: 20px;
   left: 45px;
@@ -56,10 +61,180 @@ body {
   font-size: 15px;
 }
 .banner {
-  position: relative;
-  top: 50px;
-  left: 0;
+  padding-top: 50px;
 }
 .banner img {
+  width: 100%;
+}
+
+.nav {
+  height: 58px;
+  display: flex;
+  margin: 4px 5px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.nav li {
+  flex: 1;
+}
+.nav li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  font-size: 12px;
+}
+.nav li a [class^="icon"] {
+  height: 28px;
+  width: 28px;
+  background: url(https://webresource.c-ctrip.com/NFES/html5/1640243261734/_next/serverStatic/img/nav.png)
+    no-repeat 0 0;
+  background-size: 28px auto;
+}
+
+.nav li a .icon-2 {
+  background-position: 0 -28px;
+}
+
+.nav li a .icon-3 {
+  background-position: 0 -56px;
+}
+
+.nav li a .icon-4 {
+  background-position: 0 -84px;
+}
+
+.nav li a .icon-5 {
+  background-position: 0 -110px;
+}
+
+.ZU-nav {
+  margin: 5px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ZUNav1 {
+  display: flex;
+  height: 88px;
+  background-color: chartreuse;
+}
+.ZUNav1 .navitems {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.ZUNav1 .navitems a {
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+  line-height: 44px;
+  color: #fff;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+}
+.ZUNav1 .navitems a:nth-child(1) {
+  border-bottom: 1px solid seashell;
+}
+.ZUNav1 .navitems:nth-child(1) a {
+  border: 0;
+}
+
+.ZUNav1 .navitems:nth-child(-n + 2) {
+  border: 1px solid rgb(255, 238, 244);
+}
+
+.ZUNav1:nth-child(2) {
+  margin: 3px 0;
+}
+
+.ZUNav1 {
+  background: -webkit-linear-gradient(left, #f8635a, #fe974a);
+}
+/**热点导航栏 */
+
+.mid {
+  margin: 4px;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.mid li {
+  flex: 20%;
+  padding: 3px;
+}
+.mid li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: #333;
+}
+.mid li a [class^="icon"] {
+  height: 28px;
+  width: 28px;
+  background: url(https://webresource.c-ctrip.com/NFES/html5/1640243261734/_next/serverStatic/img/nav.png)
+    no-repeat 0 0;
+  background-size: 28px auto;
+}
+/**底部 */
+
+.footer {
+  margin: 4px;
+  border-radius: 5px;
+  border-top: 1px solid #bbb;
+}
+
+.footer .top {
+  height: 44px;
+  text-align: center;
+  position: relative;
+
+  border-bottom: 1px solid #bbb;
+}
+
+.footer .top .lef h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 5px;
+  line-height: 44px;
+
+  font-weight: normal;
+  margin-top: 1px;
+}
+.footer .top .lef a {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  font-size: 12px;
+  border-radius: 8px;
+  background: -webkit-linear-gradient(left, #f8635a, #fe974a);
+  padding: 7px 20px 7px 3px;
+}
+.footer .top .lef a::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 7px;
+  height: 7px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+
+.box1 {
+  display: flex;
+}
+.box1 a {
+  flex: 1;
+}
+.box1 img {
   width: 100%;
 }
